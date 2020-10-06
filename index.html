@@ -17,13 +17,24 @@
   </style>
 </head>
 <body>
-
+  
+  <div class='black'>
+    <div id="burguer-inside">
+      <img id="x" src="/images/icon-close.svg">
+      <nav id="navbar-mobile">
+        <a class="menu-item" href="#">Home</a>
+        <a class="menu-item" href="#">Shop</a>  
+        <a class="menu-item" href="#">About</a>  
+        <a class="menu-item" href="#">Contact</a> 
+      </nav>
+    </div>
+  </div>
   <div id="hero">
     <div id="hero-image-text">
 
             
       <div id="header">
-        <a href="#"><img id="hamburguer" src="./images/icon-hamburger.svg"></a>
+        <a id="hamburguer" href="#"><img src="./images/icon-hamburger.svg"></a>
         <a href="#"><img id="logo" src="./images/logo.svg"></a>
         <nav id="navbar">
           <a class="menu-item" href="#">Home</a>
@@ -36,8 +47,8 @@
       
       
       <div id="arrows">
-        <a href="#"><div class="arrow-div"><img class="arrow-img" src="./images/icon-angle-left.svg"></div></a>
-        <a href="#"><div class="arrow-div"><img class="arrow-img" src="./images/icon-angle-right.svg"></div></a>
+        <a class="left-arrow" href="#"><img class="arrow-img left" src="./images/icon-angle-left.svg"></a>
+        <a class="right-arrow" href="#"><img class="arrow-img right" src="./images/icon-angle-right.svg"></a>
       </div>
       
       
@@ -45,10 +56,10 @@
     
     <div id="home">
       <div id="cards" class="text">
-        <h1>
+        <h1 id="h1-change">
           Discover innovative ways to decorate
         </h1>
-        <p class="p-text">
+        <p id="p-change" class="p-text">
         We provide unmatched quality, comfort, and style for property owners across the country. 
         Our experts combine form andnfunction in bringing your vision to life. Create a room in your 
         own style with our collection and make your property a reflection of you and what you love.
@@ -64,8 +75,8 @@
     </div>
 
     <div id="arrows-desktop">
-      <a href="#"><img class="arrow-img" src="./images/icon-angle-left.svg"></a>
-      <a href="#"><img class="arrow-img" src="./images/icon-angle-right.svg"></a>
+      <a class="left-arrow" href="#"><img class="arrow-img left" src="./images/icon-angle-left.svg"></a>
+      <a class="right-arrow" href="#"><img class="arrow-img right" src="./images/icon-angle-right.svg"></a>
     </div>
 
   </div>
@@ -112,5 +123,9 @@
     Coded by <a href="#">Nicolás Biondini</a>.
   </div>
 -->
+
+<script src="/script/app.js"></script>
+<script src="/script/interfaz.js"></script>
+
 </body>
 </html>

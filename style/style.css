@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
 
+html{
+    min-height: 100%;
+    position: relative;
+}
+
 body {
+    height: 100%;
     font-size: 12px;
     font-family: 'Spartan', sans-serif;
     color: hsl(0, 0%, 0%);
@@ -8,6 +14,55 @@ body {
     padding: 0;
     width: 100vw;
     max-width: 100%;
+}
+
+.black{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+#burguer-inside{
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#x{
+    width: 15px;
+    height: auto;
+}
+
+#navbar-mobile{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item{
+    color: black;
+    font-weight: 700;
+    text-transform: lowercase;
+    -webkit-transition: border 200ms ease-out;
+    -moz-transition: border 200ms ease-out;
+    -o-transition: border 200ms ease-out;
+    transition: border 200ms ease-out;
+    border-bottom: 1px solid transparent;
+    padding: 2.5px;
+    border-bottom: 2.5px solid transparent;
+}
+
+.menu-item:hover{
+    border-bottom: 2.5px solid black;
+
 }
 
 a {
@@ -56,7 +111,7 @@ img{
 }
 
 #hero-image-text{
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     background-image: url("/images/mobile-image-hero-1.jpg");
     background-size: cover;
@@ -102,6 +157,15 @@ h1{
     justify-content: start;
     align-items: center;
 }
+
+.shop-text:hover{
+    color: hsl(0, 0%, 63%);
+    -webkit-transition: color 200ms ease-out;
+    -moz-transition: color 200ms ease-out;
+    -o-transition: color 200ms ease-out;
+    transition: color 200ms ease-out;
+}
+
 
 .shop-text{
     font-weight: 600;
@@ -163,11 +227,23 @@ h2{
         justify-content: space-around;
     }
 
+    .menu-item:hover{
+        border-bottom: 2.5px solid white;
+        
+    }
+
     .menu-item{
         text-transform: lowercase;
         color: white;
         margin-left: 1rem;
         margin-right: 1rem;
+        -webkit-transition: border 200ms ease-out;
+        -moz-transition: border 200ms ease-out;
+        -o-transition: border 200ms ease-out;
+        transition: border 200ms ease-out;
+        border-bottom: 1px solid transparent;
+        padding: 2.5px;
+        border-bottom: 2.5px solid transparent;
     }
 
 
@@ -177,6 +253,9 @@ h2{
         bottom: 0;
     }
 
+    .arrow-img{
+        width: 90%;    
+    }
 
     /* Sacar burguer icon, hero pic*/
     #hamburguer{
@@ -205,19 +284,12 @@ h2{
     #arrows-desktop{
         width: 10vw;
         height: 100%;
+        background-color: black;
         display: flex;
         justify-content: space-around;
         align-items: center;
         grid-area: arrow;
     }
-
-    .arrow-div{
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        z-index: 10;
-    }
-
 
     #home{
         grid-area: second;
