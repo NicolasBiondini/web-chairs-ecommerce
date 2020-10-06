@@ -217,6 +217,7 @@ h2{
     #header{
         margin-top: 7%;
         width: 60%;
+        margin-left: 10%;
         position: initial;
         display: flex;
     }
@@ -234,6 +235,7 @@ h2{
 
     .menu-item{
         text-transform: lowercase;
+        font-weight: 600;
         color: white;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -245,7 +247,6 @@ h2{
         padding: 2.5px;
         border-bottom: 2.5px solid transparent;
     }
-
 
 
     #arrows{
